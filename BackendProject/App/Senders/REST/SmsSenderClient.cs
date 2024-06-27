@@ -9,22 +9,22 @@ public class SmsSenderClient(IHttpClientFactory httpClientFactory)
 {
     public async Task SendAsync(string phoneNumber, string text)
     {
-        await GetAsync("sendsms.php", new QueryParameter
+        await GetAsync("", new QueryParameter
         {
             Key = "username",
-            Value = "gulia"
+            Value = ""
         }, new QueryParameter
         {
             Key = "password",
-            Value = "67YBGfCl93"
+            Value = ""
         }, new QueryParameter
         {
             Key = "client_id",
-            Value = "1035"
+            Value = ""
         }, new QueryParameter
         {
             Key = "service_id",
-            Value = "2860"
+            Value = ""
         },new QueryParameter{
             Key = "to",
             Value = "+995"+phoneNumber
